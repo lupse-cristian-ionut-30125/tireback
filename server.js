@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.post("/", (req, res) => {
+app.post("/data", (req, res) => {
   const details = req.body;
   mysqldb.query(
     "INSERT INTO TyreCondition SET ?",
@@ -27,7 +27,7 @@ app.post("/", (req, res) => {
   );
 });
 
-app.get("/", (req, res) => {
+app.get("/data", (req, res) => {
   mysqldb.query("SELECT * FROM TyreCondition", (error, results) => {
     if (error) throw error;
     res.json(results);
