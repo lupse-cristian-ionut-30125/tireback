@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 const connection = mysql.createConnection(
-  "mysql://extremeparts_gabriel:parola2001@extreme-parts.com/extremeparts_ExtremeDB"
+  "mysql://extremeparts_gabriel:parola2001@95.214.134.85/extremeparts_ExtremeDB"
 );
 
 connection.connect((err) => {
