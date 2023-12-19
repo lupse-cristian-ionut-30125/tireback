@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "http://localhost:4200", // Modifică cu originea ta de dezvoltare
+  origin: "http://localhost:4200",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,
