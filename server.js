@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "http://localhost:4200",
+  origin: ["http://localhost:4200", "https://contact-tire.livingtech.ro"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,
